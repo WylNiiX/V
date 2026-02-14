@@ -16,9 +16,11 @@ const ctx = canvas.getContext("2d");
 const messages = [
   "You are loved today and always 🤍",
   "Everything looks amazing on you ✨",
-  "Sending du'as, kindness, and happiness your way 🌷",
+  "Sending du'as, kindness, and happiness your way",
   "I am grateful that life made me know you",
   "May your character and light always shine ✨",
+  "You always give a reason to smile",
+  "Talking to you felt so easy and sincere 🌿",
   "Wishing you a peaceful and blessed day filled with goodness 🤍🌹",
 ];
 
