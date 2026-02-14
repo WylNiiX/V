@@ -19,7 +19,7 @@ const messages = [
   "Sending du'as, kindness, and happiness your way",
   "I am grateful that life made me know you",
   "May your character and light always shine ✨",
-  "You always give a reason to smile",
+  "You always give me a reason to smile 😊",
   "Talking to you felt so easy and sincere 🌿",
   "Wishing you a peaceful and blessed day filled with goodness 🤍🌹",
 ];
