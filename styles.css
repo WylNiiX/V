@@ -1,0 +1,86 @@
+:root {
+  --bg: #120016;
+  --bg-soft: #28002f;
+  --card: rgba(32, 6, 36, 0.72);
+  --text: #ffe8ff;
+  --accent: #ff4fa3;
+  --accent-2: #ff87c1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 20%, #53114f 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, #36004a 0%, transparent 40%),
+    linear-gradient(135deg, var(--bg), var(--bg-soft));
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app {
+  width: min(92vw, 700px);
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  background: var(--card);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  margin-top: 0;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  opacity: 0.92;
+}
+
+#celebrateBtn {
+  margin-top: 1rem;
+  padding: 0.85rem 1.4rem;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(255, 79, 163, 0.45);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+#celebrateBtn:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 10px 30px rgba(255, 79, 163, 0.55);
+}
+
+#celebrateBtn:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+.message {
+  min-height: 2.2rem;
+  margin: 1rem 0 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffd1ea;
+}
+
+#poppers {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
