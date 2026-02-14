@@ -4,12 +4,11 @@ const canvas = document.getElementById("poppers");
 const ctx = canvas.getContext("2d");
 
 const messages = [
-  "You are loved today and always 💞",
+  "You are loved today and always 🤍",
   "You're my favorite reason to smile 😊",
   "Everything looks amazing on you ✨",
-  "You are appreciated today and always 🤍”,
-  "Sending du’as, kindness, and happiness your way 🌷",
-  "You’re a beautiful reason to be grateful 😊",
+  "Sending du'as, kindness, and happiness your way 🌷",
+  "I am so grateful to have known you",
   "May your character and light always shine ✨",
   "Wishing you a peaceful and blessed day filled with goodness 🤍🌹"
 ];
