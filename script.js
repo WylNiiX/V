@@ -8,7 +8,7 @@ const messages = [
   "Sending hugs, hearts, and happiness 💝",
   "You're my favorite reason to smile 😊",
   "Love looks amazing on you ✨",
-  "Wishing you the sweetest Valentine's Day 🌹",
+  "Wishing you the sweetest Valentine's Day 🤍🌹",
 ];
 
 let confetti = [];
