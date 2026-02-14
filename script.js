@@ -4,7 +4,7 @@ const canvas = document.getElementById("poppers");
 const ctx = canvas.getContext("2d");
 const emojiBackground = document.querySelector(".emoji-background");
 
-const backgroundEmojis = ["🤍🌹", "🦆", "🐤", "🤍🦆", "🤍", "🐈", "🤍🐈"];
+const backgroundEmojis = ["🤍🌹", "🦆", "🐤", "🐣", "🦢", "🤍", "🦢", "🐈"];
 
 function fillEmojiBackground() {
   if (!emojiBackground) return;
