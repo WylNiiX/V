@@ -2,6 +2,29 @@ const button = document.getElementById("celebrateBtn");
 const message = document.getElementById("message");
 const canvas = document.getElementById("poppers");
 const ctx = canvas.getContext("2d");
+const emojiBackground = document.querySelector(".emoji-background");
+
+const backgroundEmojis = ["🤍🌹", "🦆", "🐤", "🤍🦆", "🤍", "🐈", "🤍🐈"];
+
+function fillEmojiBackground() {
+  if (!emojiBackground) return;
+
+  const minCellWidth = window.innerWidth <= 640 ? 44 : 56;
+  const minCellHeight = window.innerWidth <= 640 ? 40 : 48;
+  const rows = Math.ceil(window.innerHeight / minCellHeight) + 2;
+  const cols = Math.ceil(window.innerWidth / minCellWidth) + 1;
+  const totalCells = rows * cols;
+
+  emojiBackground.innerHTML = "";
+
+  for (let i = 0; i < totalCells; i += 1) {
+    const span = document.createElement("span");
+    span.textContent =
+      backgroundEmojis[Math.floor(Math.random() * backgroundEmojis.length)];
+    emojiBackground.appendChild(span);
+  }
+}
+
 
 // const messages = [
 //   "You are loved today and always 🤍",
@@ -89,5 +112,10 @@ button.addEventListener("click", () => {
   launchPoppers();
 });
 
-window.addEventListener("resize", resizeCanvas);
+window.addEventListener("resize", () => {
+  resizeCanvas();
+  fillEmojiBackground();
+});
+
 resizeCanvas();
+fillEmojiBackground();
