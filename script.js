@@ -4,7 +4,7 @@ const canvas = document.getElementById("poppers");
 const ctx = canvas.getContext("2d");
 const emojiBackground = document.querySelector(".emoji-background");
 
-const backgroundEmojis = ["🤍🌹", "🦆", "🐤", "🐣", "🦢", "🤍", "🦢", "🐈"];
+const backgroundEmojis = ["🤍", "🤍", "🤍", "🤍🌹", "🤍🌹"];
 
 function fillEmojiBackground() {
   if (!emojiBackground) return;
@@ -13,7 +13,7 @@ function fillEmojiBackground() {
   const minCellHeight = window.innerWidth <= 640 ? 40 : 48;
   const rows = Math.ceil(window.innerHeight / minCellHeight) + 2;
   const cols = Math.ceil(window.innerWidth / minCellWidth) + 1;
-  const totalCells = rows * cols;
+  const totalCells = Math.ceil((rows * cols) / 2);
 
   emojiBackground.innerHTML = "";
 
