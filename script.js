@@ -1,4 +1,5 @@
 const button = document.getElementById("celebrateBtn");
+const nahButton = document.getElementById("nahBtn");
 const message = document.getElementById("message");
 const canvas = document.getElementById("poppers");
 const ctx = canvas.getContext("2d");
@@ -113,6 +114,10 @@ function animate() {
 button.addEventListener("click", () => {
   message.textContent = messages[Math.floor(Math.random() * messages.length)];
   launchPoppers();
+});
+
+nahButton.addEventListener("click", () => {
+  message.textContent = "Can the duck change your mind? Are you sure? I will tell Lumba! 🥺🦆";
 });
 
 window.addEventListener("resize", () => {
