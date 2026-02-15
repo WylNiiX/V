@@ -49,6 +49,8 @@ const messages = [
   "Talking to you always feel natural and sincere 🌿",
   "I really like how curious you are, thats a sign of real intelligence",
   "May Allah always protect your beautiful and kind heart 🤍",
+  "The way you care about me doesnt go unnoticed. It means a lot",
+  "I am truly grateful for the Japan gift, every time I look at it I smile. I am cherishing it",
 ];
 
 const nahMessages = [
@@ -120,7 +122,7 @@ function animate() {
 button.addEventListener("click", () => {
   message.textContent = messages[Math.floor(Math.random() * messages.length)];
   // message.style.color = "#d25d98";
-  message.style.color = "#FFD700";
+  message.style.color = "#d25d98";
   launchPoppers();
 });
 
@@ -130,7 +132,7 @@ button.addEventListener("click", () => {
 
 nahButton.addEventListener("click", () => {
   message.textContent = nahMessages[Math.floor(Math.random() * nahMessages.length)];
-  message.style.color = "#FF6B6B";
+  message.style.color = "#4A4A4A";
 });
 
 window.addEventListener("resize", () => {
