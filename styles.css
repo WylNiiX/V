@@ -131,26 +131,51 @@ h1 {
   opacity: 0.92;
 }
 
-#celebrateBtn {
+.button-row {
   margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+#celebrateBtn,
+#nahBtn {
   padding: 0.85rem 1.4rem;
   border: 0;
   border-radius: 999px;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #fff;
   font-weight: 700;
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 8px 24px rgba(255, 143, 189, 0.35);
   transition: transform 120ms ease, box-shadow 120ms ease;
 }
 
-#celebrateBtn:hover {
+#celebrateBtn {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  box-shadow: 0 8px 24px rgba(255, 143, 189, 0.35);
+}
+
+#nahBtn {
+  background: linear-gradient(135deg, #9d9d9d, #696969);
+  box-shadow: 0 8px 24px rgba(90, 90, 90, 0.3);
+}
+
+#celebrateBtn:hover,
+#nahBtn:hover {
   transform: translateY(-1px) scale(1.01);
+}
+
+#celebrateBtn:hover {
   box-shadow: 0 10px 30px rgba(255, 143, 189, 0.45);
 }
 
-#celebrateBtn:active {
+#nahBtn:hover {
+  box-shadow: 0 10px 30px rgba(90, 90, 90, 0.4);
+}
+
+#celebrateBtn:active,
+#nahBtn:active {
   transform: translateY(1px) scale(0.99);
 }
 
