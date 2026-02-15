@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+
 :root {
   --bg: #ffeef6;
   --bg-soft: #fffdf7;
@@ -21,7 +23,7 @@ body {
     radial-gradient(circle at 15% 15%, #ffffff 0%, transparent 45%),
     radial-gradient(circle at 85% 85%, #fff7d8 0%, transparent 40%),
     linear-gradient(135deg, var(--bg), var(--bg-soft));
-  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Patrick Hand", "Segoe UI", "Trebuchet MS", Arial, sans-serif;
   position: relative;
   overflow: hidden;
 }
@@ -141,6 +143,8 @@ h1 {
 
 #celebrateBtn,
 #nahBtn {
+  font-family: inherit;
+  letter-spacing: 0.01em;
   padding: 0.85rem 1.4rem;
   border: 0;
   border-radius: 999px;
