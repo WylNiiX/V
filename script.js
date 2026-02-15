@@ -119,6 +119,7 @@ function animate() {
 
 button.addEventListener("click", () => {
   message.textContent = messages[Math.floor(Math.random() * messages.length)];
+  message.style.color = "#d25d98";
   launchPoppers();
 });
 
@@ -128,6 +129,7 @@ button.addEventListener("click", () => {
 
 nahButton.addEventListener("click", () => {
   message.textContent = nahMessages[Math.floor(Math.random() * nahMessages.length)];
+  message.style.color = "#FF6B6B";
 });
 
 window.addEventListener("resize", () => {
