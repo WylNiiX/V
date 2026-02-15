@@ -51,6 +51,12 @@ const messages = [
   "May Allah always protect your beautiful and kind heart 🤍",
 ];
 
+const nahMessages = [
+  "Can the duck change your mind?",
+  "Are you sure?",
+  "I will tell Lumba!",
+];
+
 let confetti = [];
 let animationFrame;
 
@@ -116,8 +122,12 @@ button.addEventListener("click", () => {
   launchPoppers();
 });
 
+// nahButton.addEventListener("click", () => {
+//   message.textContent = "Can the duck change your mind? Are you sure? I will tell Lumba! 🥺🦆";
+// });
+
 nahButton.addEventListener("click", () => {
-  message.textContent = "Can the duck change your mind? Are you sure? I will tell Lumba! 🥺🦆";
+  message.textContent = nahMessages[Math.floor(Math.random() * nahMessages.length)];
 });
 
 window.addEventListener("resize", () => {
