@@ -54,7 +54,7 @@ const messages = [
 const nahMessages = [
   "Can the duck change your mind?",
   "Are you sure?",
-  "I will tell Lumba!",
+  "I will tell Lumba! 🐈‍⬛",
 ];
 
 let confetti = [];
@@ -119,7 +119,8 @@ function animate() {
 
 button.addEventListener("click", () => {
   message.textContent = messages[Math.floor(Math.random() * messages.length)];
-  message.style.color = "#d25d98";
+  // message.style.color = "#d25d98";
+  message.style.color = "#FFD700";
   launchPoppers();
 });
 
